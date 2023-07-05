@@ -23,16 +23,73 @@
         <label class="form-label" for="name">Vārds</label>
         <input type="text" class="form-control" id="name" placeholder="Vārds" required>
         <!-- Epasts-->
+        <label class="form-label" for="name">E-pasts</label>
+        <input type="text" class="form-control" id="name" placeholder="epasts@epasts.com" required>
       </div>
-
+   
       <div class="row border p-3 my-3">
         <label for="feelings">Cik priecīgs tu šodien jūties?</label>
         <input type="range" class="form-control-range" id="feelings">
       </div>
 
+      <div class="row border p-3 my-3">
+        <label class="input-group-text" for="inputGroupFile01">Ielādē attēlu/foto</label>
+        <input type="file" class="form-control" id="inputGroupFile01">
+      </div>
+
+      <div class="row border p-3 my-3">
+        <h2>Mīļākais saldējums?</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Vaniļas
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Šokolādes
+          </label>
+        </div>
+      </div>
+
+      <div class=" row border p-3 my-3">
+        <h3>Kuros veikalos ikdienā iepērcies?</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Maxima
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Rimi
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Mego
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Beta
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Lidl
+          </label>
+        </div>
+      </div>
+
       <div class=" row border p-3 my-3">
         <div class="row gy-2">
-          <h3>Informācija par tavu dzīvesvietu</h3>
+          <h4>Informācija par tavu dzīvesvietu</h4>
           <label for="street">Ielas nosaukums</label>
           <input type="text" class="form-control" id="street" placeholder="Rīgas iela" required="">
 
@@ -88,17 +145,6 @@
       <div class="d-flex justify-content-center">
         <button type="submit" class="btn btn-primary d-flex justify-content-center"
           onclick="validateForm()">Submit</button>
-      </div>
-
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li>Action</li>
-          <li>Another action</li>
-          <li>Something else here</li>
-        </ul>
       </div>
 
     </form>
